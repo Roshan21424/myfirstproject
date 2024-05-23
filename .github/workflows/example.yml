@@ -1,0 +1,25 @@
+name: example workflow
+on:
+ push:
+  branches:
+   -main
+ pull_request:
+  branches:
+   -main
+ workflow_dispatch:
+
+jobs:
+  hello:
+   runs-on: windows-latest
+   steps:
+    - uses: actions/checkout@v2
+    - name: example
+      run: echo "hey"
+      shell: powershell
+
+  goodbye:
+    runs-on: windows-latest
+    steps:
+      - name: goodbye world
+        run: echo "goodbye"
+        shell: powershell
