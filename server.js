@@ -1,5 +1,6 @@
 const http = require("http");
 var server=http.createServer((req,res)=>{
-res.end("hello22");
+    //hi
+res.end("bye");
 });
 server.listen(9000);
