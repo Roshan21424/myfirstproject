@@ -5,11 +5,10 @@ name: example workflow
 on:
   push:
    branches:
-    -master
+    - master
   pull_request:
    branches:
-    -master
-
+    - master
  #This specifies that the workflow can also be manually triggered using the GitHub Actions workflow dispatch UI or API.   
   workflow_dispatch:
 
