@@ -3,15 +3,15 @@ name: example workflow
 
 #events that will trigger the workflow
 on:
- push:
-  branches:
-   -master
- pull_request:
-  branches:
-   -master
+  push:
+   branches:
+    -master
+  pull_request:
+   branches:
+    -master
 
  #This specifies that the workflow can also be manually triggered using the GitHub Actions workflow dispatch UI or API.   
- workflow_dispatch:
+  workflow_dispatch:
 
 #list of jobs to perform when the event is triggered
 jobs:
